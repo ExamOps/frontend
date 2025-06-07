@@ -19,6 +19,6 @@ export default defineNuxtRouteMiddleware((to, from) => {
         tokens.access_token && 
         tokens.refresh_token
     ) {
-        return navigateTo('/dashboard/projects')
+        return navigateTo('/dashboard/cups')
     }
 });

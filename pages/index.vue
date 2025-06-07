@@ -1,7 +1,7 @@
 <template>
-    <section class="w-full h-screen flex flex-col justify-center gap-[20px]">
-        <section class="flex justify-center items-center">
-            <svg class="h-[150px] w-[150px]" viewBox="0 0 100 100">
+    <section class="wrapper w-full h-screen flex flex-col justify-center gap-[20px]">
+        <section class="container flex justify-center items-center">
+            <svg class="logo" viewBox="0 0 100 100">
                 <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
                 <!-- left line -->
                 <path d="M 21 40 V 59">
@@ -34,8 +34,38 @@
             </svg>
         </section>
 
-        <h1 class="flex justify-center font-mono text-[18px] font-bold bg-gradient-to-r from-primary-dark to-zinc-500 bg-clip-text text-transparent">
+        <h1 class="title flex justify-center font-mono text-[18px] font-bold bg-gradient-to-r from-primary-dark to-zinc-500 bg-clip-text text-transparent">
             Тут ничего не будет
         </h1>
     </section>
 </template>
+
+<style scoped>
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .wrapper .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper .container .logo {
+        width: 150px;
+        height: 150px;
+    }
+    .wrapper .title {
+        display: flex;
+        justify-content: center;
+        font-family: "JetBrains Mono", serif;
+        font-size: 18px;
+        font-weight: 700;
+        background: linear-gradient(90deg, #3d3d3d 50%, #434343 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+</style>

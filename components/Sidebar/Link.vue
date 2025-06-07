@@ -20,7 +20,7 @@
 
     const active = computed(() => {
         if (!props.item.eng) return false;
-        return route.path.split('/')[2].indexOf(props.item.eng) !== -1;
+        return route.path.split('/')[2].indexOf(props.item.eng.substring(1)) !== -1;
     });
 </script>
 
