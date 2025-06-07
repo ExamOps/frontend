@@ -13,7 +13,6 @@
     });
     
     const content = [
-        { rus: 'Главная', eng: '/', path: home },
         { rus: 'Чемпионаты', eng: '/cups', name: 'cups' },
         { rus: 'Модули', eng: '/modules', path: proxies },
         { rus: 'Логи', eng: '/logs', path: logs, add: false }

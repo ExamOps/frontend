@@ -15,7 +15,7 @@
     const api = new PennoeAPI(TemplateAPI.x_token);
     try {
         if (await api.refreshAccessToken(Tokens.getTokens()))
-            navigateTo('/dashboard/projects');
+            navigateTo('/dashboard/cups');
     } catch (e) { }
 
     const loginValue = ref<string>('');
